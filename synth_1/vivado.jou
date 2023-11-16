@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Nov 16 23:59:35 2023
+# Process ID: 11428
+# Current directory: D:/SOC/course-lab_4-2022.1/4_2_vivado/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log user_project_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_project_wrapper.tcl
+# Log file: D:/SOC/course-lab_4-2022.1/4_2_vivado/project_1/project_1.runs/synth_1/user_project_wrapper.vds
+# Journal file: D:/SOC/course-lab_4-2022.1/4_2_vivado/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source user_project_wrapper.tcl -notrace

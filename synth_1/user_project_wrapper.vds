@@ -1,0 +1,586 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Nov 16 23:59:35 2023
+# Process ID: 11428
+# Current directory: D:/SOC/course-lab_4-2022.1/4_2_vivado/project_1/project_1.runs/synth_1
+# Command line: vivado.exe -log user_project_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_project_wrapper.tcl
+# Log file: D:/SOC/course-lab_4-2022.1/4_2_vivado/project_1/project_1.runs/synth_1/user_project_wrapper.vds
+# Journal file: D:/SOC/course-lab_4-2022.1/4_2_vivado/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source user_project_wrapper.tcl -notrace
+Command: synth_design -top user_project_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9404
+WARNING: [Synth 8-2611] redeclaration of ansi port io_in is not allowed [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/user_proj_example.counter.v:80]
+WARNING: [Synth 8-2611] redeclaration of ansi port io_out is not allowed [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/user_proj_example.counter.v:81]
+WARNING: [Synth 8-2611] redeclaration of ansi port io_oeb is not allowed [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/user_proj_example.counter.v:82]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1250.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'user_project_wrapper' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/user_project_wrapper.v:32]
+INFO: [Synth 8-6157] synthesizing module 'user_proj_example' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/user_proj_example.counter.v:38]
+INFO: [Synth 8-6157] synthesizing module 'bram' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/bram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bram' (1#1) [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/bram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'user_proj_example' (2#1) [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/user_proj_example.counter.v:38]
+WARNING: [Synth 8-689] width (1) of port connection 'io_out' does not match port width (38) of module 'user_proj_example' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/user_project_wrapper.v:205]
+INFO: [Synth 8-6157] synthesizing module 'fir' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:1]
+Found Register slices driven by multiple sources
+Found Register slices driven by multiple sources
+Found Register slices driven by multiple sources
+Found Register slices driven by multiple sources
+Found Register slices driven by multiple sources
+Found Register slices driven by multiple sources
+Found Register slices driven by multiple sources
+Found Register slices driven by multiple sources
+Found Register slices driven by multiple sources
+Found Register slices driven by multiple sources
+INFO: [Synth 8-6155] done synthesizing module 'fir' (3#1) [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:1]
+INFO: [Synth 8-6157] synthesizing module 'bram12' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/bram12.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bram12' (4#1) [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/bram12.v:3]
+INFO: [Synth 8-6157] synthesizing module 'bram11' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/bram11.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bram11' (5#1) [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/bram11.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'user_project_wrapper' (6#1) [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/user_project_wrapper.v:32]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.798 . Memory (MB): peak = 2044.777 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/SOC/course-lab_4-2022.1/4_2_vivado/constrc_1.xdc]
+WARNING: [Vivado 12-663] port, pin or net 'get_ports' not found. [D:/SOC/course-lab_4-2022.1/4_2_vivado/constrc_1.xdc:1]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'wb_clk_i' matched to 'port' objects. [D:/SOC/course-lab_4-2022.1/4_2_vivado/constrc_1.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [D:/SOC/course-lab_4-2022.1/4_2_vivado/constrc_1.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2044.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.480 . Memory (MB): peak = 2044.777 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:34 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'tap_address_reg' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:401]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  11 Input   32 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1039  
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Multipliers : 
+	              32x32  Multipliers := 10    
++---RAMs : 
+	               8K Bit	(257 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 1042  
+	   3 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4108  
+	   5 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP fir_DUT/result_adder10, operation Mode is: A''*B.
+DSP Report: register fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: register fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: operator fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: operator fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: Generating DSP fir_DUT/result_adder10, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[18] is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: operator fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: operator fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: Generating DSP fir_DUT/result_adder10, operation Mode is: A*B''.
+DSP Report: register fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: register fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: operator fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: operator fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: Generating DSP fir_DUT/result_adder10, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[18] is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: operator fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: operator fir_DUT/result_adder10 is absorbed into DSP fir_DUT/result_adder10.
+DSP Report: Generating DSP fir_DUT/result_adder9, operation Mode is: A''*B.
+DSP Report: register fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: register fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: operator fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: operator fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: Generating DSP fir_DUT/result_adder9, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[17] is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: operator fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: operator fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: Generating DSP fir_DUT/result_adder9, operation Mode is: A*B''.
+DSP Report: register fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: register fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: operator fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: operator fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: Generating DSP fir_DUT/result_adder9, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[17] is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: operator fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: operator fir_DUT/result_adder9 is absorbed into DSP fir_DUT/result_adder9.
+DSP Report: Generating DSP fir_DUT/result_adder8, operation Mode is: A''*B.
+DSP Report: register fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: register fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: operator fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: operator fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: Generating DSP fir_DUT/result_adder8, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[16] is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: operator fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: operator fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: Generating DSP fir_DUT/result_adder8, operation Mode is: A*B''.
+DSP Report: register fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: register fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: operator fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: operator fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: Generating DSP fir_DUT/result_adder8, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[16] is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: operator fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: operator fir_DUT/result_adder8 is absorbed into DSP fir_DUT/result_adder8.
+DSP Report: Generating DSP fir_DUT/result_adder7, operation Mode is: A''*B.
+DSP Report: register fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: register fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: operator fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: operator fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: Generating DSP fir_DUT/result_adder7, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[15] is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: operator fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: operator fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: Generating DSP fir_DUT/result_adder7, operation Mode is: A*B''.
+DSP Report: register fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: register fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: operator fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: operator fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: Generating DSP fir_DUT/result_adder7, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[15] is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: operator fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: operator fir_DUT/result_adder7 is absorbed into DSP fir_DUT/result_adder7.
+DSP Report: Generating DSP fir_DUT/result_adder6, operation Mode is: A''*B.
+DSP Report: register fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: register fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: operator fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: operator fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: Generating DSP fir_DUT/result_adder6, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[14] is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: operator fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: operator fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: Generating DSP fir_DUT/result_adder6, operation Mode is: A*B''.
+DSP Report: register fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: register fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: operator fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: operator fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: Generating DSP fir_DUT/result_adder6, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[14] is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: operator fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: operator fir_DUT/result_adder6 is absorbed into DSP fir_DUT/result_adder6.
+DSP Report: Generating DSP fir_DUT/result_adder5, operation Mode is: A''*B.
+DSP Report: register fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: register fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: operator fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: operator fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: Generating DSP fir_DUT/result_adder5, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[13] is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: operator fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: operator fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: Generating DSP fir_DUT/result_adder5, operation Mode is: A*B''.
+DSP Report: register fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: register fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: operator fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: operator fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: Generating DSP fir_DUT/result_adder5, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[13] is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: operator fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: operator fir_DUT/result_adder5 is absorbed into DSP fir_DUT/result_adder5.
+DSP Report: Generating DSP fir_DUT/result_adder4, operation Mode is: A''*B.
+DSP Report: register fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: register fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: operator fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: operator fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: Generating DSP fir_DUT/result_adder4, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[12] is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: operator fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: operator fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: Generating DSP fir_DUT/result_adder4, operation Mode is: A*B''.
+DSP Report: register fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: register fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: operator fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: operator fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: Generating DSP fir_DUT/result_adder4, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[12] is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: operator fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: operator fir_DUT/result_adder4 is absorbed into DSP fir_DUT/result_adder4.
+DSP Report: Generating DSP fir_DUT/result_adder3, operation Mode is: A''*B.
+DSP Report: register fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: register fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: operator fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: operator fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: Generating DSP fir_DUT/result_adder3, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[11] is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: operator fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: operator fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: Generating DSP fir_DUT/result_adder3, operation Mode is: A*B''.
+DSP Report: register fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: register fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: operator fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: operator fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: Generating DSP fir_DUT/result_adder3, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[11] is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: operator fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: operator fir_DUT/result_adder3 is absorbed into DSP fir_DUT/result_adder3.
+DSP Report: Generating DSP fir_DUT/result_adder2, operation Mode is: A''*B.
+DSP Report: register fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: register fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: operator fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: operator fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: Generating DSP fir_DUT/result_adder2, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[10] is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: operator fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: operator fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: Generating DSP fir_DUT/result_adder2, operation Mode is: A*B''.
+DSP Report: register fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: register fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: operator fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: operator fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: Generating DSP fir_DUT/result_adder2, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[10] is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: operator fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: operator fir_DUT/result_adder2 is absorbed into DSP fir_DUT/result_adder2.
+DSP Report: Generating DSP fir_DUT/result_adder1, operation Mode is: A''*B.
+DSP Report: register fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: register fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: operator fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: operator fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: Generating DSP fir_DUT/result_adder1, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[9] is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: operator fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: operator fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: Generating DSP fir_DUT/result_adder1, operation Mode is: A*B''.
+DSP Report: register fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: register fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: operator fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: operator fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: Generating DSP fir_DUT/result_adder1, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register fir_DUT/RAM_reg[9] is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: operator fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+DSP Report: operator fir_DUT/result_adder1 is absorbed into DSP fir_DUT/result_adder1.
+INFO: [Synth 8-6851] RAM (tap_RAM/RAM_reg) has partial Byte Wide Write Enable pattern, however no output register found in fanout of RAM. Recommended to use supported Byte Wide Write Enable template. 
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[31]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[30]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[29]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[28]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[27]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[26]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[25]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[24]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[23]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[22]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[21]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[20]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[19]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[18]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[17]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[16]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[15]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[14]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[13]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[12]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[11]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[10]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[9]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[8]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[7]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[6]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[5]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[4]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[3]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[2]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[1]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/fir_DUT/result_adder_reg[0]/Q' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [D:/SOC/course-lab_4-2022.1/4_2_vivado/lab-caravel_fir/rtl/user/fir.v:280]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below)
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|user_project_wrapper | A''*B           | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B''           | 18     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A''*B           | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B''           | 18     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A''*B           | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B''           | 18     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A''*B           | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B''           | 18     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A''*B           | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B''           | 18     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A''*B           | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B''           | 18     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A''*B           | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B''           | 18     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A''*B           | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B''           | 18     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A''*B           | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B''           | 18     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A''*B           | 18     | 16     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | A*B''           | 18     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|user_project_wrapper | (PCIN>>17)+A*B2 | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
++---------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     2|
+|4     |LUT3 |     2|
+|5     |LUT4 |     8|
+|6     |LUT5 |     1|
+|7     |LUT6 |     5|
+|8     |FDRE |     9|
+|9     |IBUF |    38|
+|10    |OBUF |   240|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 2044.777 ; gain = 794.250
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 96 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:48 ; elapsed = 00:01:11 . Memory (MB): peak = 2044.777 ; gain = 794.250
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:21 . Memory (MB): peak = 2044.777 ; gain = 794.250
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2044.777 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2044.777 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: b9ffa21a
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 6 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 2044.777 ; gain = 794.250
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'D:/SOC/course-lab_4-2022.1/4_2_vivado/project_1/project_1.runs/synth_1/user_project_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file user_project_wrapper_utilization_synth.rpt -pb user_project_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 17 00:01:02 2023...
